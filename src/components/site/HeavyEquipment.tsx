@@ -59,11 +59,62 @@ import imgDrillMachine from "@/assets/equipment/drill-machine.jpg";
 import imgJackHammerPneumatic from "@/assets/equipment/jack-hammer-pneumatic.jpg";
 import imgPlateCompactor from "@/assets/equipment/plate-compactor.jpg";
 import imgJumpingJackCompactor from "@/assets/equipment/jumping-jack-compactor.jpg";
+import imgGen100Kva from "@/assets/equipment/generator-100kva.png";
+import imgGen400Kva from "@/assets/equipment/generator-400kva.png";
+import imgGen500Kva from "@/assets/equipment/generator-500kva.png";
 
 export const heavyEquipmentList = [
   {
-    id: "asphalt-paver",
+    id: "generator-100kva",
     num: "01",
+    name: "100 KVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen100Kva,
+    summary: "Heavy-duty 100 KVA Caterpillar soundproof diesel generator unit for site power, plant operations, and backup electricity.",
+    description: "Industrial-grade 100 KVA Caterpillar silent diesel generator unit engineered for continuous site prime power and emergency backup. Features sound attenuated acoustic canopy, automatic main transfer switch (ATS) compatibility, and fuel-efficient CAT engine.",
+    specs: "100 KVA Prime Power Rating | Caterpillar Diesel Engine | Soundproof Acoustic Canopy",
+    highlights: [
+      "Continuous Construction Site & Plant Power",
+      "Low Noise Weatherproof Acoustic Enclosure",
+      "Automatic Transfer Switch (ATS) Ready",
+      "Certified Operation & 24/7 On-Site Support",
+    ],
+  },
+  {
+    id: "generator-400kva",
+    num: "02",
+    name: "400 KVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen400Kva,
+    summary: "Heavy high-capacity 400 KVA Caterpillar industrial diesel generator for major project sites, refineries, and plant power.",
+    description: "High-capacity 400 KVA Caterpillar diesel generator unit providing reliable heavy-duty power for major industrial contracts, camp infrastructure, dewatering plants, and structural welding stations across KSA.",
+    specs: "400 KVA Heavy Prime Power Rating | CAT Heavy Industrial Engine | High Fuel Efficiency",
+    highlights: [
+      "Heavy Industrial Plant & Main Site Power",
+      "Multi-Voltage Power Output Control Panel",
+      "Heavy Duty Base Fuel Tank for Extended Runtime",
+      "Fully Serviced Fleet with Rapid Deployment",
+    ],
+  },
+  {
+    id: "generator-500kva",
+    num: "03",
+    name: "500 KVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen500Kva,
+    summary: "Heavy-duty 500 KVA Caterpillar diesel generator unit for massive industrial plants, turnarounds, and mega project sites.",
+    description: "Ultra heavy-duty 500 KVA Caterpillar diesel generator station designed for heavy continuous load operations. Essential for powering large construction camps, heavy machinery plants, concrete batching facilities, and industrial shutdown operations.",
+    specs: "500 KVA Ultra Heavy Prime Power Rating | Advanced Digital Control Panel | CAT Turbo Diesel Engine",
+    highlights: [
+      "Mega Construction Site & Industrial Shutdown Power",
+      "Heavy Continuous Electrical Load Bearing",
+      "Advanced CAT Digital Monitor & Safety Shutdowns",
+      "Complete Distribution Box & Cable Accessories Option",
+    ],
+  },
+  {
+    id: "asphalt-paver",
+    num: "04",
     name: "Asphalt Paver",
     category: "Paving & Roadwork",
     img: imgAsphaltPaver,
@@ -79,7 +130,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "boom-truck",
-    num: "02",
+    num: "05",
     name: "Boom Truck",
     category: "Lifting & Transport",
     img: imgBoomTruck,
@@ -95,7 +146,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "concrete-mixer",
-    num: "03",
+    num: "06",
     name: "Concrete Mixer",
     category: "Concrete & Civil",
     img: imgConcreteMixer,
@@ -111,7 +162,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "crane",
-    num: "04",
+    num: "07",
     name: "Crane",
     category: "Heavy Lifting",
     img: imgCrane,
@@ -127,7 +178,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "dump-truck",
-    num: "05",
+    num: "08",
     name: "Dump Truck",
     category: "Hauling & Earthmoving",
     img: imgDumpTruck,
@@ -143,7 +194,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "excavator-with-jackhammer",
-    num: "06",
+    num: "09",
     name: "Excavator with Jack Hammer",
     category: "Earthmoving & Demolition",
     img: imgExcavatorWithJackhammer,
@@ -159,7 +210,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "forklift",
-    num: "07",
+    num: "10",
     name: "Forklift",
     category: "Material Handling",
     img: imgForklift,
@@ -175,7 +226,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jackhammer-loader",
-    num: "08",
+    num: "11",
     name: "Jackhammer (Backhoe Attachment)",
     category: "Demolition & Breaking",
     img: imgJackhammerLoader,
@@ -191,7 +242,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jcb-backhoe",
-    num: "09",
+    num: "12",
     name: "JCB (Backhoe Loader)",
     category: "Earthmoving",
     img: imgJcbBackhoe,
@@ -207,7 +258,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "manlift",
-    num: "10",
+    num: "13",
     name: "Manlift (Boom Lift)",
     category: "Aerial Access",
     img: imgManlift,
@@ -223,7 +274,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "road-roller",
-    num: "11",
+    num: "14",
     name: "Road Roller",
     category: "Compaction",
     img: imgRoadRoller,
@@ -239,7 +290,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "scissor-lift",
-    num: "12",
+    num: "15",
     name: "Scissor Lift",
     category: "Aerial Access",
     img: imgScissorLift,
@@ -255,7 +306,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "telehandler",
-    num: "13",
+    num: "16",
     name: "Telehandler",
     category: "Material Handling",
     img: imgTelehandler,
@@ -271,7 +322,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "water-tanker",
-    num: "14",
+    num: "17",
     name: "Water Tanker",
     category: "Site Services",
     img: imgWaterTanker,
@@ -287,7 +338,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "wheel-loader",
-    num: "15",
+    num: "18",
     name: "Wheel Loader",
     category: "Earthmoving",
     img: imgWheelLoader,
@@ -303,7 +354,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "angle-grinder",
-    num: "16",
+    num: "19",
     name: "Angle Grinder & Tools",
     category: "Power Tools",
     img: imgAngleGrinder,
@@ -319,7 +370,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "drill-machine",
-    num: "17",
+    num: "20",
     name: "Drill Machine",
     category: "Power Tools",
     img: imgDrillMachine,
@@ -335,7 +386,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jack-hammer-pneumatic",
-    num: "18",
+    num: "21",
     name: "Jack Hammer (Demolition Breaker)",
     category: "Power Tools",
     img: imgJackHammerPneumatic,
@@ -351,7 +402,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "plate-compactor",
-    num: "19",
+    num: "22",
     name: "Plate Compactor",
     category: "Compaction",
     img: imgPlateCompactor,
@@ -367,7 +418,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jumping-jack-compactor",
-    num: "20",
+    num: "23",
     name: "Jumping Jack Compactor",
     category: "Compaction",
     img: imgJumpingJackCompactor,
@@ -393,12 +444,20 @@ export function HeavyEquipment() {
 
   const filteredEquipment = useMemo(() => {
     return heavyEquipmentList.filter((e) => {
-      const matchesTab =
-        activeTab === "all" || e.category.toLowerCase().includes(activeTab.toLowerCase());
+      let matchesTab = true;
+      if (activeTab === "power") {
+        matchesTab = e.category === "Power Generation";
+      } else if (activeTab === "tools") {
+        matchesTab = e.category === "Power Tools" || e.category.toLowerCase().includes("demolition");
+      } else if (activeTab !== "all") {
+        matchesTab = e.category.toLowerCase().includes(activeTab.toLowerCase());
+      }
+
       const matchesSearch =
         e.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         e.summary.toLowerCase().includes(searchQuery.toLowerCase()) ||
         e.category.toLowerCase().includes(searchQuery.toLowerCase());
+
       return matchesTab && matchesSearch;
     });
   }, [activeTab, searchQuery]);
@@ -427,7 +486,7 @@ export function HeavyEquipment() {
         <SectionHeading
           eyebrow="Fleet & Equipment"
           title="Heavy Equipment Rental & Availability"
-          intro="ARZAQ EXPRESS Est. maintains a comprehensive fleet of 21 heavy equipment, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
+          intro="ARZAQ EXPRESS Est. maintains a comprehensive fleet of 23 heavy equipment, diesel generators, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
           invert
         />
 
@@ -444,7 +503,10 @@ export function HeavyEquipment() {
             <div className="overflow-x-auto pb-1 w-full flex justify-start sm:justify-center">
               <TabsList className="flex w-max sm:w-full bg-slate-900 p-1.5 border border-slate-800 rounded-xl gap-1">
                 <TabsTrigger value="all" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
-                  All (20)
+                  All ({heavyEquipmentList.length})
+                </TabsTrigger>
+                <TabsTrigger value="power" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
+                  Power Generators
                 </TabsTrigger>
                 <TabsTrigger value="earthmoving" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
                   Earthmoving
