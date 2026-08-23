@@ -17,7 +17,7 @@ const links = [
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
   { label: "Scaffolding, Towers & Ladders", href: "/#scaffolding" },
-  { label: "Heavy Equipment Availability", href: "/#equipment" },
+  { label: "Heavy Equipment Rental & Availability", href: "/#equipment" },
   { label: "Gallery", href: "/gallery" },
   { label: "Contact us", href: "/#contact" },
 ];

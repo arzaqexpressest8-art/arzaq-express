@@ -439,7 +439,7 @@ export function Gallery() {
                 {activeItem.title}
               </DialogTitle>
               <DialogDescription className="text-slate-300 text-xs sm:text-sm">
-                ARZAQ EXPRESS INDUSTRIAL Est. Official Media Showcase
+                ARZAQ EXPRESS Est. Official Media Showcase
               </DialogDescription>
             </DialogHeader>
 

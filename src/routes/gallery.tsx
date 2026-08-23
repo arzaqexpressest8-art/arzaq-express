@@ -26,8 +26,8 @@ export const userGalleryPhotos = Object.entries(imageModules).map(
   })
 );
 
-const title = "Photo Gallery | ARZAQ EXPRESS INDUSTRIAL Est. | Saudi Arabia";
-const description = "Official Photo Gallery of ARZAQ EXPRESS INDUSTRIAL Est.";
+const title = "Photo Gallery | ARZAQ EXPRESS Est. | Saudi Arabia";
+const description = "Official Photo Gallery of ARZAQ EXPRESS Est.";
 
 export const Route = createFileRoute("/gallery")({
   head: () => ({

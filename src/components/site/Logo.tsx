@@ -28,7 +28,7 @@ export function Logo({
       <div className="relative flex items-center justify-center rounded-full bg-white p-1 shadow-md border border-amber-500/30 shrink-0 transition-transform duration-300 group-hover:scale-105">
         <img
           src={logoEmblem}
-          alt="ARZAQ EXPRESS INDUSTRIAL Est. Emblem"
+          alt="ARZAQ EXPRESS Est. Emblem"
           className={cn("w-auto object-contain shrink-0", sizeClasses[size])}
         />
       </div>

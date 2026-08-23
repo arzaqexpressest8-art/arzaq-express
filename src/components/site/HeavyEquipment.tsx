@@ -44,6 +44,7 @@ import imgConcreteMixer from "@/assets/equipment/concrete-mixer.jpg";
 import imgCrane from "@/assets/equipment/crane.jpg";
 import imgDumpTruck from "@/assets/equipment/dump-truck.jpg";
 import imgExcavator from "@/assets/equipment/excavator.jpg";
+import imgExcavatorWithJackhammer from "@/assets/equipment/excavator-with-jackhammer.jpg";
 import imgForklift from "@/assets/equipment/forklift.jpg";
 import imgJackhammerLoader from "@/assets/equipment/jackhammer-loader.jpg";
 import imgJcbBackhoe from "@/assets/equipment/jcb-backhoe.jpg";
@@ -141,19 +142,19 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "excavator",
+    id: "excavator-with-jackhammer",
     num: "06",
-    name: "Excavator",
-    category: "Earthmoving",
-    img: imgExcavator,
-    summary: "Heavy hydraulic crawler excavator for trenching, foundation digging, site grading, and heavy excavation.",
-    description: "High-performance crawler excavator equipped with heavy digging bucket and hydraulic breaker option. Designed for deep foundation trenching, site leveling, rock excavation, and heavy civil works.",
-    specs: "Heavy Duty Crawler Tracks | High Breakout Force Hydraulic Arm",
+    name: "Excavator with Jack Hammer",
+    category: "Earthmoving & Demolition",
+    img: imgExcavatorWithJackhammer,
+    summary: "Heavy hydraulic crawler excavator outfitted with high-impact hydraulic breaker / jackhammer attachment for rock breaking & demolition.",
+    description: "Heavy-duty crawler excavator equipped with a heavy hydraulic jackhammer attachment. Engineered for high-impact rock fracturing, reinforced concrete demolition, trenching in hard rock formations, and heavy civil excavation across Saudi Arabia.",
+    specs: "Heavy Duty Crawler Excavator | High-Impact Energy Hydraulic Breaker Attachment | Reinforced Booms",
     highlights: [
-      "Deep Foundation Digging & Pipeline Trenching",
-      "High Breakout Force Bucket & Rock Rip Capability",
-      "Optional Hydraulic Breaker / Hammer Attachment",
-      "Fuel Efficient Engine with Experienced Operator",
+      "Heavy Rock Fracturing & Hard Strata Excavation",
+      "Reinforced Concrete Structure & Foundation Demolition",
+      "Trenching & Pipeline Channeling in Solid Rock",
+      "Supplied with Certified Operator & On-Site Support",
     ],
   },
   {
@@ -425,8 +426,8 @@ export function HeavyEquipment() {
       <div className="relative">
         <SectionHeading
           eyebrow="Fleet & Equipment"
-          title="Heavy Equipment Availability"
-          intro="ARZAQ EXPRESS INDUSTRIAL Est. maintains a comprehensive fleet of 20 heavy equipment, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
+          title="Heavy Equipment Rental & Availability"
+          intro="ARZAQ EXPRESS Est. maintains a comprehensive fleet of 21 heavy equipment, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
           invert
         />
 
@@ -539,7 +540,7 @@ export function HeavyEquipment() {
                         onClick={() => setSelectedEquipment(item)}
                         className="w-full justify-between border-slate-800 bg-slate-950 text-slate-200 hover:bg-amber-600 hover:text-white hover:border-amber-600 transition-colors text-xs font-semibold h-11 sm:h-9 rounded-xl"
                       >
-                        <span>View Specs & Details</span>
+                        <span>View Specifications</span>
                         <Maximize2 className="h-3.5 w-3.5" />
                       </Button>
                     </DialogTrigger>
@@ -551,7 +552,7 @@ export function HeavyEquipment() {
                             <Badge variant="outline" className="border-amber-500/40 text-amber-400 bg-amber-500/10 text-xs font-bold">
                               #{selectedEquipment.num} · {selectedEquipment.category}
                             </Badge>
-                            <span className="text-xs text-slate-400">ARZAQ EXPRESS Heavy Equipment Availability</span>
+                            <span className="text-xs text-slate-400">ARZAQ EXPRESS Heavy Equipment Rental & Availability</span>
                           </div>
                           <DialogTitle className="text-lg sm:text-2xl font-bold text-amber-400 mt-2">
                             {selectedEquipment.name}

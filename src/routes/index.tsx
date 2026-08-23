@@ -17,9 +17,9 @@ import { Faq } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
-const title = "ARZAQ EXPRESS INDUSTRIAL Est. | Heavy Equipment Availability & Engineering | Saudi Arabia";
+const title = "ARZAQ EXPRESS Est. | Heavy Equipment Rental & Availability & Engineering | Saudi Arabia";
 const description =
-  "ARZAQ EXPRESS INDUSTRIAL Est., located in Dammam KSA, supplies 20 heavy equipment machinery, certified scaffolding towers & ladders, and complete industrial services.";
+  "ARZAQ EXPRESS Est., located in Dammam KSA, supplies 21 heavy equipment machinery, certified scaffolding towers & ladders, and complete industrial services.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

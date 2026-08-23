@@ -37,24 +37,34 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
-import imgAluTower from "@/assets/scaffolding/aluminium-mobile-tower.jpg";
-import imgCuplockSingle from "@/assets/scaffolding/cuplock-mobile-tower-single.jpg";
-import imgCuplockDouble from "@/assets/scaffolding/cuplock-mobile-tower-double.jpg";
-import imgSteelLadder from "@/assets/scaffolding/steel-ladder.jpg";
-import imgBeamLadder from "@/assets/scaffolding/beam-ladder.jpg";
-import imgAluLadder from "@/assets/scaffolding/aluminium-ladder.jpg";
-import imgSteelBoard from "@/assets/scaffolding/thick-steel-board.jpg";
-import imgOshaBoard from "@/assets/scaffolding/lvl-osha-board.jpg";
-import imgCasterWheel from "@/assets/scaffolding/caster-wheel.jpg";
-import imgCoupler from "@/assets/scaffolding/coupler-en74.jpg";
-import imgScaffoldTube from "@/assets/scaffolding/scaffolding-tube.jpg";
+const scaffoldingImages = import.meta.glob<{ default: string }>(
+  "../../assets/scaffolding/*.{jpeg,jpg,png,webp,JPEG,JPG,PNG,WEBP}",
+  { eager: true }
+);
+
+const scaffoldingImageList = Object.values(scaffoldingImages).map((mod) => mod.default);
 
 export const scaffoldingProducts = [
+  {
+    id: "cuplock-mobile-tower-double",
+    title: "Cuplock Mobile Tower - Double",
+    category: "Mobile Towers",
+    img: scaffoldingImageList[0] || "",
+    summary: "Versatile double-width mobile tower solution for hard-to-reach places. Light aluminium frames with integrated ladder.",
+    description: "Our aluminium tower offers a solution for those hard to reach places that require safe and convenient access. Simple and easy to erect due to the lightness of aluminium, our frames and accessories are durable, low-maintenance and mobile giving you the versatility to relocate or adjust. This main frame is designed for those who need a ladder in the main frame.",
+    sizes: "Width: 1.45 m | Length: 2.45 m | Heights: 2.0m to 20.0m",
+    highlights: [
+      "Double Width (1.45m) for Multi-Worker Access",
+      "Built-in Ladder within the Main Frame",
+      "Relocatable & Adjustable Lightweight Aluminium",
+      "Working Heights up to 20.0 Meters",
+    ],
+  },
   {
     id: "aluminium-mobile-tower",
     title: "Aluminium Mobile Tower",
     category: "Mobile Towers",
-    img: imgAluTower,
+    img: scaffoldingImageList[1] || "",
     summary: "Leading mobile tower extension ladder & tiltable tower ladder for rental and sales across Saudi Arabia.",
     description: "We are a leading Manufacturer of various degree mobile tower extension ladder, various degree mobile tower ladder, various degree tower extension ladder, various degree mobile tower ladder for rental, various degree tiltable mobile tower ladder for rental and various degree mobile tower ladder on rental from Saudi Arabia.",
     sizes: "Custom heights & tiltable extension configurations available",
@@ -69,7 +79,7 @@ export const scaffoldingProducts = [
     id: "cuplock-mobile-tower-single",
     title: "Cuplock Mobile Tower - Single",
     category: "Mobile Towers",
-    img: imgCuplockSingle,
+    img: scaffoldingImageList[2] || "",
     summary: "International mobile scaffold tower for narrow conditions. Adjustable outriggers for maximum stability at extended heights.",
     description: "The international mobile scaffold tower for conditions where narrowness prevails. The adjustable outriggers allow for multiple adaptions. When fully extracted the outriggers provide conditions in extended heights. When retracted, the tower can easily be moved through alley, doorways etc, or be used for wall side applications.",
     sizes: "Width: 0.80 m | Length: 1.80 m | Heights: 2.0m, 3.0m, 4.0m, 5.0m, 6.0m, 7.0m",
@@ -81,40 +91,10 @@ export const scaffoldingProducts = [
     ],
   },
   {
-    id: "cuplock-mobile-tower-double",
-    title: "Cuplock Mobile Tower - Double",
-    category: "Mobile Towers",
-    img: imgCuplockDouble,
-    summary: "Versatile double-width mobile tower solution for hard-to-reach places. Light aluminium frames with integrated ladder.",
-    description: "Our aluminium tower offers a solution for those hard to reach places that require safe and convenient access. Simple and easy to erect due to the lightness of aluminium, our frames and accessories are durable, low-maintenance and mobile giving you the versatility to relocate or adjust. This main frame is designed for those who need a ladder in the main frame.",
-    sizes: "Width: 1.45 m | Length: 2.45 m | Heights: 2.0m to 20.0m (2m, 3m, 4m, 5m, 6m, 7m, 8m, 9m, 10m, 11m, 12m, 13m, 14m, 15m, 16m, 17m, 18m, 19m, 20m)",
-    highlights: [
-      "Double Width (1.45m) for Multi-Worker Access",
-      "Built-in Ladder within the Main Frame",
-      "Relocatable & Adjustable Lightweight Aluminium",
-      "Working Heights up to 20.0 Meters",
-    ],
-  },
-  {
-    id: "steel-ladder",
-    title: "Steel Ladder",
-    category: "Ladders",
-    img: imgSteelLadder,
-    summary: "Modular steel ladders with circular rungs, anti-slip grooved surfaces, rubber end caps, and top fixing hooks.",
-    description: "Steel Ladders are of modular design with circular rungs. Steel Ladders are available in 2, 3, 4 & 6 Mtrs length as standard. Non-standard are fitted with hooks for easy fixing. Steel Ladders have additional features, such as anti slip grooved rungs, anti slip rubber end caps and are light in weight too.",
-    sizes: "Standard Lengths: 2.0m, 3.0m, 4.0m, 6.0m (Custom with hooks available)",
-    highlights: [
-      "Modular Heavy-Duty Steel Design",
-      "Anti-Slip Grooved Circular Rungs",
-      "Anti-Slip Protective Rubber End Caps",
-      "Top Hooks for Secure Scaffold Fixing",
-    ],
-  },
-  {
     id: "beam-ladder",
     title: "Beam Ladder",
     category: "Ladders",
-    img: imgBeamLadder,
+    img: scaffoldingImageList[3] || "",
     summary: "High tensile steel ladder beams providing clear spans between scaffold structures. Hot-dip galvanized finish.",
     description: "Ladder beams make for a clear span between scaffolds. They are constructed from high tensile steel and the saddles are welded at each galvanized finish and available in different lengths and weights.",
     sizes: "Multiple span lengths & weight capacities available",
@@ -126,10 +106,25 @@ export const scaffoldingProducts = [
     ],
   },
   {
+    id: "steel-ladder",
+    title: "Steel Ladder",
+    category: "Ladders",
+    img: scaffoldingImageList[4] || "",
+    summary: "Modular steel ladders with circular rungs, anti-slip grooved surfaces, rubber end caps, and top fixing hooks.",
+    description: "Steel Ladders are of modular design with circular rungs. Steel Ladders are available in 2, 3, 4 & 6 Mtrs length as standard. Non-standard are fitted with hooks for easy fixing. Steel Ladders have additional features, such as anti slip grooved rungs, anti slip rubber end caps and are light in weight too.",
+    sizes: "Standard Lengths: 2.0m, 3.0m, 4.0m, 6.0m (Custom with hooks available)",
+    highlights: [
+      "Modular Heavy-Duty Steel Design",
+      "Anti-Slip Grooved Circular Rungs",
+      "Anti-Slip Protective Rubber End Caps",
+      "Top Hooks for Secure Scaffold Fixing",
+    ],
+  },
+  {
     id: "aluminium-ladder",
     title: "Aluminium Ladder",
     category: "Ladders",
-    img: imgAluLadder,
+    img: scaffoldingImageList[5] || "",
     summary: "Rope-operated 2-piece extension ladder with spring-loaded lock hooks, nylon groove pulley, and non-slip rubber feet.",
     description: "Rope-operated two-piece ladder with comfortable rungs. Level adjustable by Nylon or PVC rope. Spring-Loaded lock hooks to lock level in desired place. Nylon groove pulley for smooth sliding rope. Non-slip heavy duty swell rubber foot riveted to the base of the rails. Special design rubber caps are fixed at the top ends, to provide firm grip against leaning surface.",
     sizes: "Adjustable 2-piece extension heights",
@@ -141,40 +136,10 @@ export const scaffoldingProducts = [
     ],
   },
   {
-    id: "thick-steel-board",
-    title: "Thick Steel Board - 1.8mm",
-    category: "Boards & Planks",
-    img: imgSteelBoard,
-    summary: "Heavy-duty 1.8mm thick steel scaffold board with perforated anti-slip surface. Available in painted and galvanized finishes.",
-    description: "Available in painted finishes. Weight – 5.6 kgs/mtr. Manufactured from 1.8mm thick steel plate.",
-    sizes: "Thickness: 1.8mm Steel Plate | Weight: 5.6 kg/meter",
-    highlights: [
-      "1.8mm High-Strength Steel Plate",
-      "Perforated Non-Slip Surface Design",
-      "Weight: 5.6 kg per meter",
-      "Painted & Hot-Dip Galvanized Finish Options",
-    ],
-  },
-  {
-    id: "lvl-osha-board",
-    title: "LVL OSHA Board",
-    category: "Boards & Planks",
-    img: imgOshaBoard,
-    summary: "Individually proof-laminated scaffold board embossed with OSHA proof stamp. Standard size 225 x 38mm.",
-    description: "Each scaffold board is individually proof laminated and embossed with osha proof scaffolding plank is in 225 × 38mm, Customized Size are available.",
-    sizes: "Standard Plank Size: 225 × 38mm (Customized sizes available)",
-    highlights: [
-      "Individually Proof Laminated LVL Timber",
-      "Embossed OSHA Compliant Safety Stamp",
-      "Standard Dimension: 225mm Width x 38mm Depth",
-      "High Bending Strength & Warp Resistance",
-    ],
-  },
-  {
     id: "heavy-duty-caster-wheel",
     title: "Heavy Duty Caster Wheel",
     category: "Accessories",
-    img: imgCasterWheel,
+    img: scaffoldingImageList[6] || "",
     summary: "Precision cast iron core casters with low rolling resistance, floor protective non-marking tires, and brake locks.",
     description: "Avail from us firmly bonded to precision machined cast iron cores Heavy Duty Caster Wheels with low rolling resistance, smooth & noiseless running. These are non-marking and floor protective. These casters possess high abrasion value and good cut resistance and are resistant to tearing. Temperature range they can sustain is -20°C to 85°C.",
     sizes: "Standard Mobile Scaffold Tower Stem & Plate Mounting",
@@ -186,10 +151,40 @@ export const scaffoldingProducts = [
     ],
   },
   {
+    id: "lvl-osha-board",
+    title: "LVL OSHA Board",
+    category: "Boards & Planks",
+    img: scaffoldingImageList[7] || "",
+    summary: "Individually proof-laminated scaffold board embossed with OSHA proof stamp. Standard size 225 x 38mm.",
+    description: "Each scaffold board is individually proof laminated and embossed with osha proof scaffolding plank is in 225 × 38mm, Customized Size are available.",
+    sizes: "Standard Plank Size: 225 × 38mm (Customized sizes available)",
+    highlights: [
+      "Individually Proof Laminated LVL Timber",
+      "Embossed OSHA Compliant Safety Stamp",
+      "Standard Dimension: 225mm Width x 38mm Depth",
+      "High Bending Strength & Warp Resistance",
+    ],
+  },
+  {
+    id: "thick-steel-board",
+    title: "Thick Steel Board - 1.8mm",
+    category: "Boards & Planks",
+    img: scaffoldingImageList[8] || "",
+    summary: "Heavy-duty 1.8mm thick steel scaffold board with perforated anti-slip surface. Available in painted and galvanized finishes.",
+    description: "Available in painted finishes. Weight – 5.6 kgs/mtr. Manufactured from 1.8mm thick steel plate.",
+    sizes: "Thickness: 1.8mm Steel Plate | Weight: 5.6 kg/meter",
+    highlights: [
+      "1.8mm High-Strength Steel Plate",
+      "Perforated Non-Slip Surface Design",
+      "Weight: 5.6 kg per meter",
+      "Painted & Hot-Dip Galvanized Finish Options",
+    ],
+  },
+  {
     id: "coupler-en74",
     title: "Coupler EN74",
     category: "Accessories",
-    img: imgCoupler,
+    img: scaffoldingImageList[9] || "",
     summary: "Sleeve, double & swivel couplers for O.D 48.3mm scaffolding tubes. Produced according to EN74 European/British standard.",
     description: "Sleeve Coupler is used to connect with O.D48.3mm scaffolding pipes and tubes horizontal, vertically and braces. It is produced according to European and British standard of En74.",
     sizes: "Fits Standard O.D 48.3mm Scaffolding Pipes & Tubes",
@@ -198,21 +193,6 @@ export const scaffoldingProducts = [
       "Drop Forged Steel Construction",
       "For 48.3mm Outer Diameter Pipes",
       "High Load Bearing & Anti-Slip Grip",
-    ],
-  },
-  {
-    id: "scaffolding-tube",
-    title: "Scaffolding Tube 3.2mm & 4mm",
-    category: "Tubes & Pipes",
-    img: imgScaffoldTube,
-    summary: "Standard O.D 48.3mm steel scaffolding tubes in 3.2mm and 4.0mm wall thickness. Galvanized and black finish.",
-    description: "SCAFFOLDING TUBE Scaffolding tube 48.3 3.2 mm EN/BS STANDARD Scaffolding tube 48.3*4.0mm EN/BS STANDARD AB Black tube 48.3*3.2mm.",
-    sizes: "O.D: 48.3mm | Wall Thicknesses: 3.2mm & 4.0mm (EN/BS Standard)",
-    highlights: [
-      "48.3mm Outer Diameter Standard Pipe",
-      "Wall Thickness Options: 3.2mm & 4.0mm",
-      "EN / BS Certified Structural Steel",
-      "Hot-Dip Galvanized & Black Tube Options",
     ],
   },
 ];
@@ -258,7 +238,7 @@ export function ScaffoldingProducts() {
       <SectionHeading
         eyebrow="Equipment & Products"
         title="Scaffolding, Towers & Ladders"
-        intro="ARZAQ EXPRESS INDUSTRIAL Est. supplies certified aluminium mobile towers, cuplock systems, steel ladders, OSHA planks, EN74 couplers, and scaffolding accessories across Saudi Arabia."
+        intro="ARZAQ EXPRESS Est. supplies certified aluminium mobile towers, cuplock systems, steel ladders, OSHA planks, EN74 couplers, and scaffolding accessories across Saudi Arabia."
         invert
       />
 
