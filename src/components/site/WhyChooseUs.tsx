@@ -42,7 +42,7 @@ export function WhyChooseUs() {
     <Section id="why" tone="warm" className="bg-slate-50 dark:bg-slate-900/40">
       <SectionHeading
         eyebrow="Why Choose Us"
-        title="Why Leading Industrial Operators Partner With Arzaq Express"
+        title="Why Leading Industrial Operators Partner With ARZAQ EXPRESS Est."
         intro="Our reputation is built on a solid foundation of quality, safety, innovation, and dependable technical execution."
       />
 

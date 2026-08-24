@@ -614,7 +614,7 @@ export function HeavyEquipment() {
                             <Badge variant="outline" className="border-amber-500/40 text-amber-400 bg-amber-500/10 text-xs font-bold">
                               #{selectedEquipment.num} · {selectedEquipment.category}
                             </Badge>
-                            <span className="text-xs text-slate-400">ARZAQ EXPRESS Heavy Equipment Rental & Availability</span>
+                            <span className="text-xs text-slate-400">ARZAQ EXPRESS Est. Heavy Equipment Rental & Availability</span>
                           </div>
                           <DialogTitle className="text-lg sm:text-2xl font-bold text-amber-400 mt-2">
                             {selectedEquipment.name}

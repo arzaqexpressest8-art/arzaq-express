@@ -46,6 +46,21 @@ const scaffoldingImageList = Object.values(scaffoldingImages).map((mod) => mod.d
 
 export const scaffoldingProducts = [
   {
+    id: "cuplock-mobile-tower-single",
+    title: "Cuplock Mobile Tower - Single",
+    category: "Mobile Towers",
+    img: scaffoldingImageList[2] || "",
+    summary: "International mobile scaffold tower for narrow conditions. Adjustable outriggers for maximum stability at extended heights.",
+    description: "The international mobile scaffold tower for conditions where narrowness prevails. The adjustable outriggers allow for multiple adaptions. When fully extracted the outriggers provide conditions in extended heights. When retracted, the tower can easily be moved through alley, doorways etc, or be used for wall side applications.",
+    sizes: "Width: 0.80 m | Length: 1.80 m | Heights: 2.0m, 3.0m, 4.0m, 5.0m, 6.0m, 7.0m",
+    highlights: [
+      "Compact 0.80m Width for Alleyways & Doorways",
+      "Fully Extractable Adjustable Outriggers",
+      "Smooth Rolling Caster Wheels with Brakes",
+      "Wall-Side Access & Narrow Workspace Application",
+    ],
+  },
+  {
     id: "cuplock-mobile-tower-double",
     title: "Cuplock Mobile Tower - Double",
     category: "Mobile Towers",
@@ -73,21 +88,6 @@ export const scaffoldingProducts = [
       "Heavy Duty Lockable Swivel Casters",
       "Easy Erecting & Relocation",
       "Complies with International Safety Standards",
-    ],
-  },
-  {
-    id: "cuplock-mobile-tower-single",
-    title: "Cuplock Mobile Tower - Single",
-    category: "Mobile Towers",
-    img: scaffoldingImageList[2] || "",
-    summary: "International mobile scaffold tower for narrow conditions. Adjustable outriggers for maximum stability at extended heights.",
-    description: "The international mobile scaffold tower for conditions where narrowness prevails. The adjustable outriggers allow for multiple adaptions. When fully extracted the outriggers provide conditions in extended heights. When retracted, the tower can easily be moved through alley, doorways etc, or be used for wall side applications.",
-    sizes: "Width: 0.80 m | Length: 1.80 m | Heights: 2.0m, 3.0m, 4.0m, 5.0m, 6.0m, 7.0m",
-    highlights: [
-      "Compact 0.80m Width for Alleyways & Doorways",
-      "Fully Extractable Adjustable Outriggers",
-      "Smooth Rolling Caster Wheels with Brakes",
-      "Wall-Side Access & Narrow Workspace Application",
     ],
   },
   {
@@ -361,7 +361,7 @@ export function ScaffoldingProducts() {
                           <Badge variant="outline" className="border-amber-500/40 text-amber-400 bg-amber-500/10 text-xs font-bold">
                             {selectedProduct.category}
                           </Badge>
-                          <span className="text-xs text-slate-400">Arzaq Express Catalog</span>
+                          <span className="text-xs text-slate-400">ARZAQ EXPRESS Est. Catalog</span>
                         </div>
                         <DialogTitle className="text-lg sm:text-2xl font-bold text-amber-400 mt-2">
                           {selectedProduct.title}

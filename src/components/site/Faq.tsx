@@ -14,7 +14,7 @@ const faqs = [
     a: "We provide 16 specialized industrial service categories across mechanical engineering, certified welding & pre-fabrication (SMAW, MIG, TIG, FCAW, SAW), generator repair, forklift fleet maintenance, electric motor winding, FRP/RTR and HDPE piping, civil works, E&I services, industrial materials supply, waterproofing/epoxy coating, asphalt works, de-watering pump rental & sales, and controlled demolition work.",
   },
   {
-    q: "Where is Arzaq Express located and what regions do you serve?",
+    q: "Where is ARZAQ EXPRESS Est. located and what regions do you serve?",
     a: "Our head office is located on Omar Bin Al-Khattab Street, Noor Complex, Dammam, Kingdom of Saudi Arabia. We serve industrial clients in Dammam, Jubail Industrial City, Al-Khobar, Ras Tanura, and throughout the Eastern Province and KSA.",
   },
   {

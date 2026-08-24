@@ -45,7 +45,7 @@ export function About() {
             <motion.img
               style={{ y }}
               src={aboutImg}
-              alt="Arzaq Express Industrial Engineering Team in Dammam KSA"
+              alt="ARZAQ EXPRESS Est. Industrial Engineering Team in Dammam KSA"
               loading="lazy"
               width={1408}
               height={1008}

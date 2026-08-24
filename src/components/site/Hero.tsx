@@ -30,7 +30,7 @@ export function Hero() {
       {/* Background Hero Image */}
       <img
         src={heroImg}
-        alt="Arzaq Express Industrial Plant Facilities in Dammam KSA"
+        alt="ARZAQ EXPRESS Est. Industrial Plant Facilities in Dammam KSA"
         className="absolute inset-0 h-full w-full object-cover object-center opacity-25"
       />
 
@@ -141,7 +141,7 @@ export function Hero() {
                 <div className="flex-1 w-full rounded-lg overflow-hidden border border-slate-200 bg-slate-100">
                   <iframe
                     src="/business/profile.pdf"
-                    title="Arzaq Express Est Profile PDF"
+                    title="ARZAQ EXPRESS Est. Profile PDF"
                     className="w-full h-full border-0"
                   />
                 </div>

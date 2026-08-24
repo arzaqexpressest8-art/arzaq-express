@@ -62,7 +62,7 @@ export function Projects() {
       <SectionHeading
         eyebrow="Projects & Gallery"
         title="Featured Industrial Project Executions"
-        intro="A showcase of site operations, steel pre-fabrication, electromechanical installations, and facility maintenance executed by Arzaq Express."
+        intro="A showcase of site operations, steel pre-fabrication, electromechanical installations, and facility maintenance executed by ARZAQ EXPRESS Est."
       />
 
       <div className="mt-14 grid auto-rows-[240px] gap-6 sm:auto-rows-[280px] sm:grid-cols-2 lg:grid-cols-4">

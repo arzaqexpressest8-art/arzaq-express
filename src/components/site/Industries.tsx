@@ -42,7 +42,7 @@ export function Industries() {
     <Section id="industries" tone="warm" className="bg-slate-100/70 dark:bg-slate-900/60">
       <SectionHeading
         eyebrow="Industries We Serve"
-        title="Key Sectors Powered by Arzaq Express Solutions"
+        title="Key Sectors Powered by ARZAQ EXPRESS Est. Solutions"
         align="center"
         intro="We serve clients across critical industrial sectors in Dammam, Jubail, and throughout Saudi Arabia."
       />

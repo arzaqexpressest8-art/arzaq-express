@@ -81,7 +81,7 @@ export function Contact() {
     <Section id="contact" tone="white">
       <SectionHeading
         eyebrow="Contact Us"
-        title="Start a Project Conversation With Arzaq Express"
+        title="Start a Project Conversation With ARZAQ EXPRESS Est."
         intro="Contact our engineering and sales department in Dammam for project inquiries, technical specifications, or emergency service requests."
       />
 

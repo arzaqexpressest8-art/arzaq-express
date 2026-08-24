@@ -7,21 +7,21 @@ import { Badge } from "@/components/ui/badge";
 
 const testimonials = [
   {
-    quote: "ARZAQ EXPRESS delivered exceptional pre-fabrication and welding solutions during our plant maintenance shutdown in Jubail. Their certified welders met strict ASME standards with zero safety incidents.",
+    quote: "ARZAQ EXPRESS Est. delivered exceptional pre-fabrication and welding solutions during our plant maintenance shutdown in Jubail. Their certified welders met strict ASME standards with zero safety incidents.",
     author: "Eng. Fahad Al-Otaibi",
     role: "Plant Maintenance Manager",
     company: "Petrochemical Complex, Jubail",
     initials: "FO",
   },
   {
-    quote: "The generator overhaul and motor rewinding services provided by Arzaq Express saved us significant replacement costs. Their team was professional, fast, and delivered right on schedule.",
+    quote: "The generator overhaul and motor rewinding services provided by ARZAQ EXPRESS Est. saved us significant replacement costs. Their team was professional, fast, and delivered right on schedule.",
     author: "Mohammed Al-Ghamdi",
     role: "Operations Director",
     company: "Industrial Manufacturing Facility, Dammam",
     initials: "MG",
   },
   {
-    quote: "We relied on Arzaq Express for dewatering pump rentals and FRP piping installation for our site earthworks. Outstanding technical expertise and 24/7 support throughout the project.",
+    quote: "We relied on ARZAQ EXPRESS Est. for dewatering pump rentals and FRP piping installation for our site earthworks. Outstanding technical expertise and 24/7 support throughout the project.",
     author: "Tariq H. Al-Mansoori",
     role: "Senior Civil Project Engineer",
     company: "Infrastructure Contracting Co, Khobar",
@@ -34,7 +34,7 @@ export function Testimonials() {
     <Section id="testimonials" tone="stone" className="bg-slate-100/80 dark:bg-slate-900/40">
       <SectionHeading
         eyebrow="Client Trust"
-        title="What Industrial Partners Say About Arzaq Express"
+        title="What Industrial Partners Say About ARZAQ EXPRESS Est."
         align="center"
         intro="Trusted by project managers, plant directors, and engineering heads across the Eastern Province."
       />

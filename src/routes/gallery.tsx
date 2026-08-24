@@ -75,7 +75,7 @@ function GalleryPage() {
                 >
                   <img
                     src={item.img}
-                    alt="Arzaq Express Site Photo"
+                    alt="ARZAQ EXPRESS Est. Site Photo"
                     loading="lazy"
                     className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
                   />
@@ -93,13 +93,13 @@ function GalleryPage() {
           {activeItem && (
             <DialogContent className="max-w-[94vw] sm:max-w-4xl max-h-[90vh] overflow-y-auto bg-white border-slate-200 text-slate-900 p-3 sm:p-5 rounded-2xl shadow-2xl">
               <DialogHeader className="hidden">
-                <DialogTitle>Arzaq Express Photo Preview</DialogTitle>
+                <DialogTitle>ARZAQ EXPRESS Est. Photo Preview</DialogTitle>
               </DialogHeader>
 
               <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl bg-slate-50 p-2 sm:p-4 border border-slate-200 flex items-center justify-center">
                 <img
                   src={activeItem.img}
-                  alt="Arzaq Express Site Photo Preview"
+                  alt="ARZAQ EXPRESS Est. Site Photo Preview"
                   className="h-full w-full object-contain"
                 />
               </div>
