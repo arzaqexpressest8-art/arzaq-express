@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 
 const serviceLinks = [
   { label: "Mechanical Work", href: "#services" },
-  { label: "Welding Solution", href: "#services" },
+  { label: "Welding Solutions", href: "#services" },
   { label: "Generator Maintenance", href: "#services" },
   { label: "Forklift Servicing", href: "#services" },
   { label: "FRP / RTR Piping", href: "#services" },

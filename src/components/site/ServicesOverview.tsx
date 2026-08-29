@@ -64,7 +64,7 @@ export const allServices = [
   {
     id: "welding",
     icon: Flame,
-    title: "Welding Solution",
+    title: "Welding Solutions",
     category: "Fabrication",
     summary: "Certified welding services following international codes (SMAW, MIG, TIG, FCAW, SAW) for structural steel, pipelines, and tanks.",
     details: [

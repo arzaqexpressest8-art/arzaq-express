@@ -22,7 +22,7 @@ const highlights = [
   {
     icon: Users,
     title: "Customer-Centric Focus",
-    desc: "Collaborative tailor-made solutions designed to extend equipment life & optimize efficiency.",
+    desc: "Collaborative, tailored solutions designed to extend equipment life and optimize efficiency.",
   },
   {
     icon: Trophy,

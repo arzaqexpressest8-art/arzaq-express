@@ -52,7 +52,7 @@ export const scaffoldingProducts = [
     img: scaffoldingImageList[2] || "",
     summary: "International mobile scaffold tower for narrow conditions. Adjustable outriggers for maximum stability at extended heights.",
     description: "The international mobile scaffold tower for conditions where narrowness prevails. The adjustable outriggers allow for multiple adaptions. When fully extracted the outriggers provide conditions in extended heights. When retracted, the tower can easily be moved through alley, doorways etc, or be used for wall side applications.",
-    sizes: "Width: 0.80 m | Length: 1.80 m | Heights: 2.0m, 3.0m, 4.0m, 5.0m, 6.0m, 7.0m",
+    sizes: "Width: 0.80 m | Length: 1.80 m | Heights: 2.0 m, 3.0 m, 4.0 m, 5.0 m, 6.0 m, 7.0 m",
     highlights: [
       "Compact 0.80m Width for Alleyways & Doorways",
       "Fully Extractable Adjustable Outriggers",
@@ -67,7 +67,7 @@ export const scaffoldingProducts = [
     img: scaffoldingImageList[0] || "",
     summary: "Versatile double-width mobile tower solution for hard-to-reach places. Light aluminium frames with integrated ladder.",
     description: "Our aluminium tower offers a solution for those hard to reach places that require safe and convenient access. Simple and easy to erect due to the lightness of aluminium, our frames and accessories are durable, low-maintenance and mobile giving you the versatility to relocate or adjust. This main frame is designed for those who need a ladder in the main frame.",
-    sizes: "Width: 1.45 m | Length: 2.45 m | Heights: 2.0m to 20.0m",
+    sizes: "Width: 1.45 m | Length: 2.45 m | Heights: 2.0 m to 20.0 m",
     highlights: [
       "Double Width (1.45m) for Multi-Worker Access",
       "Built-in Ladder within the Main Frame",
@@ -112,7 +112,7 @@ export const scaffoldingProducts = [
     img: scaffoldingImageList[4] || "",
     summary: "Modular steel ladders with circular rungs, anti-slip grooved surfaces, rubber end caps, and top fixing hooks.",
     description: "Steel Ladders are of modular design with circular rungs. Steel Ladders are available in 2, 3, 4 & 6 Mtrs length as standard. Non-standard are fitted with hooks for easy fixing. Steel Ladders have additional features, such as anti slip grooved rungs, anti slip rubber end caps and are light in weight too.",
-    sizes: "Standard Lengths: 2.0m, 3.0m, 4.0m, 6.0m (Custom with hooks available)",
+    sizes: "Standard Lengths: 2.0 m, 3.0 m, 4.0 m, 6.0 m (Custom configurations with hooks available)",
     highlights: [
       "Modular Heavy-Duty Steel Design",
       "Anti-Slip Grooved Circular Rungs",

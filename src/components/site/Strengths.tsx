@@ -28,7 +28,7 @@ const strengths = [
   {
     icon: Wrench,
     title: "Complete In-House Pre-Fabrication",
-    desc: "Off-site workshop pre-fabrication reduces site downtime and guarantees precision fitment before final field installation.",
+    desc: "Off-site workshop pre-fabrication reduces site downtime and ensures precise fitment before final field installation.",
   },
   {
     icon: ShieldCheck,

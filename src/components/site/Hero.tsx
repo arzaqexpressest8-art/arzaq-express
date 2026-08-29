@@ -18,7 +18,7 @@ import {
 
 const stats = [
   { v: 16, s: "+", l: "Core Industrial Services", l2: "Mechanical, Electrical, Civil & Fabrication" },
-  { v: 100, s: "%", l: "Safety & Quality Standard", l2: "Compliant with International Codes" },
+  { v: 100, s: "%", l: "Safety & Quality Standards", l2: "Compliant with International Codes" },
   { v: 24, s: "/7", l: "On-Site Support", l2: "Serving Dammam & Across KSA" },
 ];
 
@@ -74,7 +74,7 @@ export function Hero() {
           >
             Delivering high-quality industrial services across Mechanical Engineering, Civil Construction,
             Certified Welding & Fabrication, Electrical Systems, Instrumentation, Generator & Motor Overhaul,
-            and Materials Supply. Serving Dammam & Across the Kingdom of Saudi Arabia.
+            and Materials Supply. Serving Dammam and across the Kingdom of Saudi Arabia.
           </motion.p>
 
           {/* Highlights Pills */}

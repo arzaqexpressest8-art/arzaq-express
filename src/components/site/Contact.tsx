@@ -81,7 +81,7 @@ export function Contact() {
     <Section id="contact" tone="white">
       <SectionHeading
         eyebrow="Contact Us"
-        title="Start a Project Conversation With ARZAQ EXPRESS Est."
+        title="Discuss Your Project With ARZAQ EXPRESS Est."
         intro="Contact our engineering and sales department in Dammam for project inquiries, technical specifications, or emergency service requests."
       />
 
@@ -215,7 +215,7 @@ export function Contact() {
                   <Input
                     id="service"
                     name="service"
-                    placeholder="e.g. Mechanical Work, Welding Solution, Motor Winding, Dewatering Pump Rental"
+                    placeholder="e.g. Mechanical Work, Welding Solutions, Motor Winding, Dewatering Pump Rental"
                   />
                 </div>
 

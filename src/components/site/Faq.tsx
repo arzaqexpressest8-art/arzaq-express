@@ -30,7 +30,7 @@ const faqs = [
     a: "We specialize in corrosion-resistant Fiber Reinforced Plastic (FRP), Reinforced Thermosetting Resin (RTR), High-Density Polyethylene (HDPE) fusion jointing, CPVC high-temperature piping, PVC, as well as stainless steel, carbon steel, and alloy pipelines.",
   },
   {
-    q: "How can I request a technical commercial quote or download the company profile?",
+    q: "How can I request a technical and commercial quotation or download the company profile?",
     a: "You can click 'Company Profile' in the top header or hero section to view and download our official corporate brochure. Alternatively, fill out the inquiry form below or contact our sales team directly at sales@arzaqexpressksa.com or +966-590316144 / +966-536083965.",
   },
 ];

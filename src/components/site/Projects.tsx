@@ -40,7 +40,7 @@ const projects = [
     img: g3,
     title: "Certified Pipeline Welding & Hydrostatic Testing",
     meta: "Eastern Province · KSA",
-    category: "Welding Solution",
+    category: "Welding Solutions",
     span: "",
     details: "On-site TIG/MIG welding for high-pressure industrial piping networks adhering to ASME Section IX codes.",
   },

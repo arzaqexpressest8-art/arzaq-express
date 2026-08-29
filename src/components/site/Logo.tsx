@@ -66,7 +66,7 @@ export function Vision2030Badge({ className }: { className?: string }) {
         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
         <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
       </span>
-      <span>we are part of <strong className="font-bold tracking-wide text-amber-600 dark:text-amber-400">VISION 2030</strong> KSA</span>
+      <span>We are part of <strong className="font-bold tracking-wide text-amber-600 dark:text-amber-400">Saudi Arabia's Vision 2030</strong></span>
     </div>
   );
 }

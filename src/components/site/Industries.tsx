@@ -44,7 +44,7 @@ export function Industries() {
         eyebrow="Industries We Serve"
         title="Key Sectors Powered by ARZAQ EXPRESS Est. Solutions"
         align="center"
-        intro="We serve clients across critical industrial sectors in Dammam, Jubail, and throughout Saudi Arabia."
+        intro="We serve clients across critical industrial sectors in Dammam and throughout the Kingdom of Saudi Arabia."
       />
 
       <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

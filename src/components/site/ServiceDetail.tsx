@@ -172,7 +172,7 @@ export function ServiceDetail() {
       <SectionHeading
         eyebrow="Detailed Services"
         title="Engineered Solutions, Executed End to End"
-        intro="Explore our primary industrial capabilities in detail. Every service is backed by experienced engineers, strict quality control, and commitment to international standards."
+        intro="Explore our primary industrial capabilities in detail. Every service is backed by experienced engineers, strict quality control, and a commitment to international standards."
       />
 
       <div className="mt-16 space-y-20 lg:mt-24 lg:space-y-28">

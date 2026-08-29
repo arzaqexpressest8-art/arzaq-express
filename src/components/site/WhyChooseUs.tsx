@@ -32,8 +32,8 @@ const items = [
   },
   {
     icon: MapPin,
-    title: "Dammam & Jubail Regional Presence",
-    body: "Strategically located in the Eastern Province, we serve major industrial hubs, oil refineries, and petrochemical plants across KSA.",
+    title: "Dammam & Kingdom-Wide Presence",
+    body: "Strategically located in Dammam, Eastern Province, we serve major industrial hubs, oil refineries, and petrochemical plants across the Kingdom of Saudi Arabia.",
   },
 ];
 

@@ -53,6 +53,7 @@ import imgRoadRoller from "@/assets/equipment/road-roller.jpg";
 import imgScissorLift from "@/assets/equipment/scissor-lift.jpg";
 import imgTelehandler from "@/assets/equipment/telehandler.jpg";
 import imgWaterTanker from "@/assets/equipment/water-tanker.jpg";
+import imgDieselTankerTruck from "@/assets/equipment/diesel-tanker-truck.jpg";
 import imgWheelLoader from "@/assets/equipment/wheel-loader.jpg";
 import imgAngleGrinder from "@/assets/equipment/angle-grinder.jpg";
 import imgDrillMachine from "@/assets/equipment/drill-machine.jpg";
@@ -64,105 +65,10 @@ import imgGen400Kva from "@/assets/equipment/generator-400kva.png";
 import imgGen500Kva from "@/assets/equipment/generator-500kva.png";
 
 export const heavyEquipmentList = [
-  {
-    id: "generator-100kva",
-    num: "01",
-    name: "100 KVA Caterpillar Diesel Generator",
-    category: "Power Generation",
-    img: imgGen100Kva,
-    summary: "Heavy-duty 100 KVA Caterpillar soundproof diesel generator unit for site power, plant operations, and backup electricity.",
-    description: "Industrial-grade 100 KVA Caterpillar silent diesel generator unit engineered for continuous site prime power and emergency backup. Features sound attenuated acoustic canopy, automatic main transfer switch (ATS) compatibility, and fuel-efficient CAT engine.",
-    specs: "100 KVA Prime Power Rating | Caterpillar Diesel Engine | Soundproof Acoustic Canopy",
-    highlights: [
-      "Continuous Construction Site & Plant Power",
-      "Low Noise Weatherproof Acoustic Enclosure",
-      "Automatic Transfer Switch (ATS) Ready",
-      "Certified Operation & 24/7 On-Site Support",
-    ],
-  },
-  {
-    id: "generator-400kva",
-    num: "02",
-    name: "400 KVA Caterpillar Diesel Generator",
-    category: "Power Generation",
-    img: imgGen400Kva,
-    summary: "Heavy high-capacity 400 KVA Caterpillar industrial diesel generator for major project sites, refineries, and plant power.",
-    description: "High-capacity 400 KVA Caterpillar diesel generator unit providing reliable heavy-duty power for major industrial contracts, camp infrastructure, dewatering plants, and structural welding stations across KSA.",
-    specs: "400 KVA Heavy Prime Power Rating | CAT Heavy Industrial Engine | High Fuel Efficiency",
-    highlights: [
-      "Heavy Industrial Plant & Main Site Power",
-      "Multi-Voltage Power Output Control Panel",
-      "Heavy Duty Base Fuel Tank for Extended Runtime",
-      "Fully Serviced Fleet with Rapid Deployment",
-    ],
-  },
-  {
-    id: "generator-500kva",
-    num: "03",
-    name: "500 KVA Caterpillar Diesel Generator",
-    category: "Power Generation",
-    img: imgGen500Kva,
-    summary: "Heavy-duty 500 KVA Caterpillar diesel generator unit for massive industrial plants, turnarounds, and mega project sites.",
-    description: "Ultra heavy-duty 500 KVA Caterpillar diesel generator station designed for heavy continuous load operations. Essential for powering large construction camps, heavy machinery plants, concrete batching facilities, and industrial shutdown operations.",
-    specs: "500 KVA Ultra Heavy Prime Power Rating | Advanced Digital Control Panel | CAT Turbo Diesel Engine",
-    highlights: [
-      "Mega Construction Site & Industrial Shutdown Power",
-      "Heavy Continuous Electrical Load Bearing",
-      "Advanced CAT Digital Monitor & Safety Shutdowns",
-      "Complete Distribution Box & Cable Accessories Option",
-    ],
-  },
-  {
-    id: "asphalt-paver",
-    num: "04",
-    name: "Asphalt Paver",
-    category: "Paving & Roadwork",
-    img: imgAsphaltPaver,
-    summary: "Heavy-duty asphalt paver machine for road construction, highway surfacing, and facility paving.",
-    description: "High-precision asphalt paver available for short-term and long-term rental across Saudi Arabia. Designed for seamless asphalt distribution, paving highways, industrial plant access roads, and commercial parking lots with strict surface smoothness control.",
-    specs: "Heavy Duty Crawler / Rubber Track Paver | Precise Screed Width Control",
-    highlights: [
-      "Highway & Industrial Access Road Paving",
-      "Automatic Grade & Slope Control Systems",
-      "High Laydown Capacity for Continuous Operations",
-      "Operator Certified with Full Maintenance Support",
-    ],
-  },
-  {
-    id: "boom-truck",
-    num: "05",
-    name: "Boom Truck",
-    category: "Lifting & Transport",
-    img: imgBoomTruck,
-    summary: "Versatile boom truck equipped with hydraulic crane for material lifting, transport, and site logistics.",
-    description: "Multi-functional boom truck combining heavy payload transport with a hydraulic telescopic crane boom. Ideal for loading, transporting, and unloading heavy machinery, structural steel, pipes, and site materials across Dammam and Jubail.",
-    specs: "Telescopic Crane Boom | Heavy Flatbed Carrier | Certified Slinging Gear",
-    highlights: [
-      "Dual Material Transport & Crane Lifting",
-      "Short & Long Range Telescopic Reach",
-      "Ideal for Pipe & Steel Structure Logistics",
-      "Certified Mobile Crane Operator Included",
-    ],
-  },
-  {
-    id: "concrete-mixer",
-    num: "06",
-    name: "Concrete Mixer",
-    category: "Concrete & Civil",
-    img: imgConcreteMixer,
-    summary: "Heavy transit concrete mixer truck for ready-mix concrete transport and industrial foundation pouring.",
-    description: "High-capacity concrete transit mixer truck built for heavy civil construction projects. Ensures continuous concrete agitation and timely delivery from batching plants to industrial foundations, equipment pads, and structural slabs.",
-    specs: "Heavy Transit Mixer Drum | Multi-Axle Chassis | Fast Discharge System",
-    highlights: [
-      "Ready-Mix Concrete Transit & On-Site Pouring",
-      "Uniform Concrete Agitation & Temperature Control",
-      "Ideal for Heavy Structural Foundations & Slabs",
-      "Complies with Municipal & Aramco Civil Specs",
-    ],
-  },
+  // Group 1: Lifting & Cranes
   {
     id: "crane",
-    num: "07",
+    num: "01",
     name: "Crane",
     category: "Heavy Lifting",
     img: imgCrane,
@@ -177,136 +83,24 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "dump-truck",
-    num: "08",
-    name: "Dump Truck",
-    category: "Hauling & Earthmoving",
-    img: imgDumpTruck,
-    summary: "Heavy tipper dump truck for earthworks, site clearance, gravel hauling, and debris transport.",
-    description: "Robust heavy-duty tipper dump truck engineered for rugged site conditions. Essential for earthmoving excavation, hauling aggregate, sand, sub-base material, and removing demolition rubble from industrial sites.",
-    specs: "Heavy Capacity Tipper Body | Multi-Axle Off-Road Chassis",
+    id: "boom-truck",
+    num: "02",
+    name: "Boom Truck",
+    category: "Lifting & Transport",
+    img: imgBoomTruck,
+    summary: "Versatile boom truck equipped with hydraulic crane for material lifting, transport, and site logistics.",
+    description: "Multi-functional boom truck combining heavy payload transport with a hydraulic telescopic crane boom. Ideal for loading, transporting, and unloading heavy machinery, structural steel, pipes, and site materials across Dammam and KSA.",
+    specs: "Telescopic Crane Boom | Heavy Flatbed Carrier | Certified Slinging Gear",
     highlights: [
-      "Bulk Material & Soil Earthworks Hauling",
-      "Demolition Debris & Site Clearance Transport",
-      "Heavy Hydraulic Tipping System",
-      "Rugged Off-Road Construction Site Capability",
-    ],
-  },
-  {
-    id: "excavator-with-jackhammer",
-    num: "09",
-    name: "Excavator with Jack Hammer",
-    category: "Earthmoving & Demolition",
-    img: imgExcavatorWithJackhammer,
-    summary: "Heavy hydraulic crawler excavator outfitted with high-impact hydraulic breaker / jackhammer attachment for rock breaking & demolition.",
-    description: "Heavy-duty crawler excavator equipped with a heavy hydraulic jackhammer attachment. Engineered for high-impact rock fracturing, reinforced concrete demolition, trenching in hard rock formations, and heavy civil excavation across Saudi Arabia.",
-    specs: "Heavy Duty Crawler Excavator | High-Impact Energy Hydraulic Breaker Attachment | Reinforced Booms",
-    highlights: [
-      "Heavy Rock Fracturing & Hard Strata Excavation",
-      "Reinforced Concrete Structure & Foundation Demolition",
-      "Trenching & Pipeline Channeling in Solid Rock",
-      "Supplied with Certified Operator & On-Site Support",
-    ],
-  },
-  {
-    id: "forklift",
-    num: "10",
-    name: "Forklift",
-    category: "Material Handling",
-    img: imgForklift,
-    summary: "Industrial forklift (diesel/electric) for warehouse material handling, pallet loading, and site logistics.",
-    description: "Reliable industrial forklift available in various lifting capacities. Ideal for loading/unloading cargo trucks, warehouse pallet management, pipe yard handling, and site material movement.",
-    specs: "Heavy Capacity Lift Mast | Solid Pneumatic Tires | Side Shifter",
-    highlights: [
-      "Warehouse Pallet & Material Stacking",
-      "High Ergonomics & Precise Mast Controls",
-      "Indoor Electric & Outdoor Rough Terrain Diesel",
-      "Regularly Maintained Fleet with Safety Certs",
-    ],
-  },
-  {
-    id: "jackhammer-loader",
-    num: "11",
-    name: "Jackhammer (Backhoe Attachment)",
-    category: "Demolition & Breaking",
-    img: imgJackhammerLoader,
-    summary: "Heavy backhoe loader equipped with hydraulic breaker attachment for concrete breaking and trench cutting.",
-    description: "Heavy backhoe tractor outfitted with a high-impact hydraulic breaker / jackhammer attachment. Built for breaking reinforced concrete slabs, rock excavation, pavement demolition, and utility trenching.",
-    specs: "High Impact Energy Hydraulic Breaker | Multi-Angle Positioning",
-    highlights: [
-      "Reinforced Concrete Slab & Pavement Demolition",
-      "High-Frequency Impact Breaking Energy",
-      "Integrated Backhoe Loader Versatility",
-      "Fast Site Demolition & Trench Excavation",
-    ],
-  },
-  {
-    id: "jcb-backhoe",
-    num: "12",
-    name: "JCB (Backhoe Loader)",
-    category: "Earthmoving",
-    img: imgJcbBackhoe,
-    summary: "Multi-purpose JCB backhoe loader for digging, loading, backfilling, and general site earthworks.",
-    description: "Versatile JCB backhoe loader combining a front loading bucket with a rear excavator arm. The ultimate multi-task machine for site backfilling, trenching, material loading, and utility line excavation.",
-    specs: "4x4 All-Wheel Drive | Front Loader Bucket & Rear Backhoe Digging Arm",
-    highlights: [
-      "Versatile Digging, Loading & Backfilling",
-      "Compact Footprint for Urban & Industrial Sites",
-      "Quick Attachments for Buckets & Forks",
-      "Experienced Certified Operator Supplied",
-    ],
-  },
-  {
-    id: "manlift",
-    num: "13",
-    name: "Manlift (Boom Lift)",
-    category: "Aerial Access",
-    img: imgManlift,
-    summary: "Articulated boom manlift for safe elevated high-access work, structural inspection, and E&I installation.",
-    description: "High-reach articulated boom manlift providing safe aerial platform access to elevated work areas. Essential for high-rise steel structure assembly, E&I cable tray installation, piping inspection, and exterior facility maintenance.",
-    specs: "Articulated & Telescopic Boom | High Working Height Platform | 360° Rotation",
-    highlights: [
-      "High-Altitude Aerial Platform Access",
-      "Articulated Over-and-Away Reach Capability",
-      "Emergency Lowering & Anti-Crush Safety Systems",
-      "Diesel Rough Terrain & Electric Indoor Options",
-    ],
-  },
-  {
-    id: "road-roller",
-    num: "14",
-    name: "Road Roller",
-    category: "Compaction",
-    img: imgRoadRoller,
-    summary: "Heavy vibratory road roller for asphalt compaction, sub-base leveling, and soil stabilization.",
-    description: "Heavy-duty single/double drum vibratory compactor road roller. Ensures maximum soil compaction density, sub-grade stabilization, and smooth finish on asphalt roads, parking lots, and industrial plant foundations.",
-    specs: "Vibratory Steel Drum | Heavy Static Linear Load | High Compaction Force",
-    highlights: [
-      "Sub-Base Soil & Gravel Layer Compaction",
-      "Asphalt Surface Smooth Finishing & Sealing",
-      "Adjustable Frequency Vibratory Drum",
-      "Essential for Roadwork & Plant Foundation Civils",
-    ],
-  },
-  {
-    id: "scissor-lift",
-    num: "15",
-    name: "Scissor Lift",
-    category: "Aerial Access",
-    img: imgScissorLift,
-    summary: "Electric & rough-terrain scissor lift for vertical indoor/outdoor elevation, ceiling fit-outs, and maintenance.",
-    description: "Compact vertical scissor lift offering a wide working platform and high weight capacity for workers and tools. Perfect for ceiling lighting installation, ducting, warehouse maintenance, and interior fit-outs.",
-    specs: "Vertical Hydraulic Scissor Mechanism | Extendable Deck | Non-Marking Tires",
-    highlights: [
-      "Spacious Aerial Platform for Workers & Tools",
-      "Smooth Vertical Elevation & Extension Deck",
-      "Zero-Emission Electric Models for Indoors",
-      "Complies with Strict OSHA Overhead Safety Standards",
+      "Dual Material Transport & Crane Lifting",
+      "Short & Long Range Telescopic Reach",
+      "Ideal for Pipe & Steel Structure Logistics",
+      "Certified Mobile Crane Operator Included",
     ],
   },
   {
     id: "telehandler",
-    num: "16",
+    num: "03",
     name: "Telehandler",
     category: "Material Handling",
     img: imgTelehandler,
@@ -321,24 +115,74 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "water-tanker",
-    num: "17",
-    name: "Water Tanker",
-    category: "Site Services",
-    img: imgWaterTanker,
-    summary: "Heavy water tanker truck for site dust suppression, compaction water supply, and utility flushing.",
-    description: "High-capacity water tanker truck equipped with rear spray bars and water pump systems. Essential for site dust control, supplying water for soil compaction rollers, pipe hydrostatic testing, and site washing.",
-    specs: "High Capacity Water Tank | Rear Water Sprayer Bar | Auxiliary Water Pump",
+    id: "forklift",
+    num: "04",
+    name: "Forklift",
+    category: "Material Handling",
+    img: imgForklift,
+    summary: "Industrial forklift (diesel/electric) for warehouse material handling, pallet loading, and site logistics.",
+    description: "Reliable industrial forklift available in various lifting capacities. Ideal for loading/unloading cargo trucks, warehouse pallet management, pipe yard handling, and site material movement.",
+    specs: "Heavy Capacity Lift Mast | Solid Pneumatic Tires | Side Shifter",
     highlights: [
-      "Construction Site Dust Suppression & Spraying",
-      "Water Supply for Compactor Rollers & Earthworks",
-      "Pipeline Hydrostatic Testing Water Supply",
-      "Reliable Tanker Fleet for Daily Site Service",
+      "Warehouse Pallet & Material Stacking",
+      "High Ergonomics & Precise Mast Controls",
+      "Indoor Electric & Outdoor Rough Terrain Diesel",
+      "Regularly Maintained Fleet with Safety Certs",
+    ],
+  },
+  {
+    id: "manlift",
+    num: "05",
+    name: "Articulating Boom Lift",
+    category: "Aerial Access",
+    img: imgManlift,
+    summary: "Articulated boom lift for safe elevated high-access work, structural inspection, and E&I installation.",
+    description: "High-reach articulated boom lift providing safe aerial platform access to elevated work areas. Essential for high-rise steel structure assembly, E&I cable tray installation, piping inspection, and exterior facility maintenance.",
+    specs: "Articulated & Telescopic Boom | High Working Height Platform | 360° Rotation",
+    highlights: [
+      "High-Altitude Aerial Platform Access",
+      "Articulated Over-and-Away Reach Capability",
+      "Emergency Lowering & Anti-Crush Safety Systems",
+      "Diesel Rough Terrain & Electric Indoor Options",
+    ],
+  },
+  {
+    id: "scissor-lift",
+    num: "06",
+    name: "Rough Terrain Scissor Lift",
+    category: "Aerial Access",
+    img: imgScissorLift,
+    summary: "Electric & rough-terrain scissor lift for vertical indoor/outdoor elevation, ceiling fit-outs, and maintenance.",
+    description: "Compact vertical rough terrain scissor lift offering a wide working platform and high weight capacity for workers and tools. Perfect for ceiling lighting installation, ducting, warehouse maintenance, and interior fit-outs.",
+    specs: "Vertical Hydraulic Scissor Mechanism | Extendable Deck | Rough Terrain Tires",
+    highlights: [
+      "Spacious Aerial Platform for Workers & Tools",
+      "Smooth Vertical Elevation & Extension Deck",
+      "Heavy Duty Rough Terrain Drive & Outriggers",
+      "Complies with Strict OSHA Overhead Safety Standards",
+    ],
+  },
+
+  // Group 2: Earthmoving
+  {
+    id: "excavator-with-jackhammer",
+    num: "07",
+    name: "Excavator with Jack Hammer",
+    category: "Earthmoving & Demolition",
+    img: imgExcavatorWithJackhammer,
+    summary: "Heavy hydraulic crawler excavator outfitted with high-impact hydraulic breaker / jackhammer attachment for rock breaking & demolition.",
+    description: "Heavy-duty crawler excavator equipped with a heavy hydraulic jackhammer attachment. Engineered for high-impact rock fracturing, reinforced concrete demolition, trenching in hard rock formations, and heavy civil excavation across Saudi Arabia.",
+    specs: "Heavy Duty Crawler Excavator | High-Impact Energy Hydraulic Breaker Attachment | Reinforced Booms",
+    highlights: [
+      "Heavy Rock Fracturing & Hard Strata Excavation",
+      "Reinforced Concrete Structure & Foundation Demolition",
+      "Trenching & Pipeline Channeling in Solid Rock",
+      "Supplied with Certified Operator & On-Site Support",
     ],
   },
   {
     id: "wheel-loader",
-    num: "18",
+    num: "08",
     name: "Wheel Loader",
     category: "Earthmoving",
     img: imgWheelLoader,
@@ -353,35 +197,203 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "angle-grinder",
-    num: "19",
-    name: "Angle Grinder & Tools",
-    category: "Power Tools",
-    img: imgAngleGrinder,
-    summary: "Heavy-duty electric angle grinder with cutting & grinding discs for metal fabrication and pipe cutting.",
-    description: "Professional industrial electric angle grinder equipped with heavy-duty side handle, guard, and premium cutting/grinding discs. Used for structural steel beveling, weld seam grinding, and pipe cutting.",
-    specs: "High RPM Industrial Electric Motor | Adjustable Guard & Side Handle",
+    id: "jcb-backhoe",
+    num: "09",
+    name: "JCB Super Backhoe Loader",
+    category: "Earthmoving",
+    img: imgJcbBackhoe,
+    summary: "Multi-purpose JCB super backhoe loader for heavy digging, loading, backfilling, and site earthworks.",
+    description: "Versatile JCB super backhoe loader combining a heavy front loading bucket with a powerful rear excavator arm. The ultimate multi-task machine for site backfilling, trenching, material loading, and utility line excavation.",
+    specs: "4x4 All-Wheel Drive | Heavy Front Loader Bucket & Rear Backhoe Digging Arm",
     highlights: [
-      "Structural Steel Beveling & Weld Seam Grinding",
-      "Heavy Metal & Pipe Section Cutting",
-      "Ergonomic Vibration Reduction Handle",
-      "Supplied with Full Disc Set & Safety Guards",
+      "Versatile Digging, Loading & Backfilling",
+      "Compact Footprint for Urban & Industrial Sites",
+      "Quick Attachments for Buckets & Forks",
+      "Experienced Certified Operator Supplied",
+    ],
+  },
+
+  // Group 3: Transport & Hauling
+  {
+    id: "dump-truck",
+    num: "10",
+    name: "Dump Truck",
+    category: "Hauling & Earthmoving",
+    img: imgDumpTruck,
+    summary: "Heavy tipper dump truck for earthworks, site clearance, gravel hauling, and debris transport.",
+    description: "Robust heavy-duty tipper dump truck engineered for rugged site conditions. Essential for earthmoving excavation, hauling aggregate, sand, sub-base material, and removing demolition rubble from industrial sites.",
+    specs: "Heavy Capacity Tipper Body | Multi-Axle Off-Road Chassis",
+    highlights: [
+      "Bulk Material & Soil Earthworks Hauling",
+      "Demolition Debris & Site Clearance Transport",
+      "Heavy Hydraulic Tipping System",
+      "Rugged Off-Road Construction Site Capability",
     ],
   },
   {
-    id: "drill-machine",
-    num: "20",
-    name: "Drill Machine",
-    category: "Power Tools",
-    img: imgDrillMachine,
-    summary: "Professional rotary impact drill machine for concrete anchor drilling, steel fitting, and civil installation.",
-    description: "Heavy-duty industrial impact drill machine built for drilling anchor holes in reinforced concrete, masonry walls, and structural steel sections. Features variable speed trigger and auxiliary depth gauge handle.",
-    specs: "High Torque Impact Motor | Keyed/Keyless Chuck | Auxiliary Depth Handle",
+    id: "diesel-tanker-truck",
+    num: "11",
+    name: "Diesel Tanker Truck",
+    category: "Transport & Hauling",
+    img: imgDieselTankerTruck,
+    summary: "Heavy fuel and diesel tanker truck for site equipment refueling, plant fuel supply, and liquid transport.",
+    description: "Certified heavy fuel diesel tanker truck equipped with high-flow fuel discharge pump, meter, and safety grounding systems. Designed for site machinery refueling, diesel generator fuel replenishment, and industrial plant logistics across KSA.",
+    specs: "Certified Fuel Tank Body | High-Flow Fuel Pump & Meter | Safety Hazard Signage",
     highlights: [
-      "Concrete Anchor & Chemical Bolt Drilling",
-      "Steel Plate & Structural Section Drilling",
-      "Variable Speed & Forward/Reverse Control",
-      "Heavy-Duty Industrial Grade Construction",
+      "Continuous On-Site Heavy Machinery Refueling",
+      "Diesel Generator Fuel Replenishment Logistics",
+      "High-Flow Metered Fuel Discharge Pump",
+      "Saudi Civil Defense & Aramco Safety Compliant",
+    ],
+  },
+  {
+    id: "concrete-mixer",
+    num: "12",
+    name: "Concrete Mixer",
+    category: "Concrete & Civil",
+    img: imgConcreteMixer,
+    summary: "Heavy transit concrete mixer truck for ready-mix concrete transport and industrial foundation pouring.",
+    description: "High-capacity concrete transit mixer truck built for heavy civil construction projects. Ensures continuous concrete agitation and timely delivery from batching plants to industrial foundations, equipment pads, and structural slabs.",
+    specs: "Heavy Transit Mixer Drum | Multi-Axle Chassis | Fast Discharge System",
+    highlights: [
+      "Ready-Mix Concrete Transit & On-Site Pouring",
+      "Uniform Concrete Agitation & Temperature Control",
+      "Ideal for Heavy Structural Foundations & Slabs",
+      "Complies with Municipal & Aramco Civil Specs",
+    ],
+  },
+
+  // Group 4: Power Generators
+  {
+    id: "generator-100kva",
+    num: "13",
+    name: "100 kVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen100Kva,
+    summary: "Heavy-duty 100 kVA Caterpillar soundproof diesel generator unit for site power, plant operations, and backup electricity.",
+    description: "Industrial-grade 100 kVA Caterpillar silent diesel generator unit engineered for continuous site prime power and emergency backup. Features sound attenuated acoustic canopy, automatic main transfer switch (ATS) compatibility, and fuel-efficient CAT engine.",
+    specs: "100 kVA Prime Power Rating | Caterpillar Diesel Engine | Soundproof Acoustic Canopy",
+    highlights: [
+      "Continuous Construction Site & Plant Power",
+      "Low Noise Weatherproof Acoustic Enclosure",
+      "Automatic Transfer Switch (ATS) Ready",
+      "Certified Operation & 24/7 On-Site Support",
+    ],
+  },
+  {
+    id: "generator-400kva",
+    num: "14",
+    name: "400 kVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen400Kva,
+    summary: "Heavy high-capacity 400 kVA Caterpillar industrial diesel generator for major project sites, refineries, and plant power.",
+    description: "High-capacity 400 kVA Caterpillar diesel generator unit providing reliable heavy-duty power for major industrial contracts, camp infrastructure, dewatering plants, and structural welding stations across KSA.",
+    specs: "400 kVA Heavy Prime Power Rating | CAT Heavy Industrial Engine | High Fuel Efficiency",
+    highlights: [
+      "Heavy Industrial Plant & Main Site Power",
+      "Multi-Voltage Power Output Control Panel",
+      "Heavy Duty Base Fuel Tank for Extended Runtime",
+      "Fully Serviced Fleet with Rapid Deployment",
+    ],
+  },
+  {
+    id: "generator-500kva",
+    num: "15",
+    name: "500 kVA Caterpillar Diesel Generator",
+    category: "Power Generation",
+    img: imgGen500Kva,
+    summary: "Heavy-duty 500 kVA Caterpillar diesel generator unit for massive industrial plants, turnarounds, and mega project sites.",
+    description: "Ultra heavy-duty 500 kVA Caterpillar diesel generator station designed for heavy continuous load operations. Essential for powering large construction camps, heavy machinery plants, concrete batching facilities, and industrial shutdown operations.",
+    specs: "500 kVA Ultra Heavy Prime Power Rating | Advanced Digital Control Panel | CAT Turbo Diesel Engine",
+    highlights: [
+      "Mega Construction Site & Industrial Shutdown Power",
+      "Heavy Continuous Electrical Load Bearing",
+      "Advanced CAT Digital Monitor & Safety Shutdowns",
+      "Complete Distribution Box & Cable Accessories Option",
+    ],
+  },
+
+  // Group 5: Compaction & Paving
+  {
+    id: "asphalt-paver",
+    num: "16",
+    name: "Asphalt Paver",
+    category: "Paving & Roadwork",
+    img: imgAsphaltPaver,
+    summary: "Heavy-duty asphalt paver machine for road construction, highway surfacing, and facility paving.",
+    description: "High-precision asphalt paver available for short-term and long-term rental across Saudi Arabia. Designed for seamless asphalt distribution, paving highways, industrial plant access roads, and commercial parking lots with strict surface smoothness control.",
+    specs: "Heavy Duty Crawler / Rubber Track Paver | Precise Screed Width Control",
+    highlights: [
+      "Highway & Industrial Access Road Paving",
+      "Automatic Grade & Slope Control Systems",
+      "High Laydown Capacity for Continuous Operations",
+      "Operator Certified with Full Maintenance Support",
+    ],
+  },
+  {
+    id: "road-roller",
+    num: "17",
+    name: "Road Roller",
+    category: "Compaction",
+    img: imgRoadRoller,
+    summary: "Heavy vibratory road roller for asphalt compaction, sub-base leveling, and soil stabilization.",
+    description: "Heavy-duty single/double drum vibratory compactor road roller. Ensures maximum soil compaction density, sub-grade stabilization, and smooth finish on asphalt roads, parking lots, and industrial plant foundations.",
+    specs: "Vibratory Steel Drum | Heavy Static Linear Load | High Compaction Force",
+    highlights: [
+      "Sub-Base Soil & Gravel Layer Compaction",
+      "Asphalt Surface Smooth Finishing & Sealing",
+      "Adjustable Frequency Vibratory Drum",
+      "Essential for Roadwork & Plant Foundation Civils",
+    ],
+  },
+  {
+    id: "plate-compactor",
+    num: "18",
+    name: "Plate Compactor",
+    category: "Compaction",
+    img: imgPlateCompactor,
+    summary: "Vibratory plate compactor for soil, sand, asphalt patch, and paver base compaction in confined spaces.",
+    description: "Heavy-duty walk-behind vibratory plate compactor. Designed for compacting granular soil, sand, asphalt patch repairs, trench bases, and interlocking paver installations in tight footprints.",
+    specs: "High Centrifugal Compaction Force | Heavy Steel Base Plate | Folding Handle",
+    highlights: [
+      "Granular Soil, Sand & Asphalt Patch Compaction",
+      "Narrow Footprint for Pipe Trenches & Sidewalks",
+      "Vibration Damped Guide Handle",
+      "Reliable Four-Stroke Engine Unit",
+    ],
+  },
+  {
+    id: "jumping-jack-compactor",
+    num: "19",
+    name: "Jumping Jack Compactor",
+    category: "Compaction",
+    img: imgJumpingJackCompactor,
+    summary: "Heavy-duty rammer / jumping jack compactor for trench backfill compaction and high-cohesive soil compaction.",
+    description: "High-impact jumping jack rammer compactor. Specifically built for deep trench backfill compaction, cohesive clay soil compaction, and narrow footing excavations requiring deep impact force.",
+    specs: "High Stroke Impact Force | Heavy Polyurethane Bellows | Protective Engine Frame",
+    highlights: [
+      "Deep Trench Backfill Soil Compaction",
+      "Cohesive Clay & Silt High-Impact Ramming",
+      "Narrow Shoe Width for Tight Pipe Trenches",
+      "Heavy Guard Frame for Jobsite Durability",
+    ],
+  },
+
+  // Group 6: Demolition & Tools
+  {
+    id: "jackhammer-loader",
+    num: "20",
+    name: "Jackhammer (Backhoe Attachment)",
+    category: "Demolition & Breaking",
+    img: imgJackhammerLoader,
+    summary: "Heavy backhoe loader equipped with hydraulic breaker attachment for concrete breaking and trench cutting.",
+    description: "Heavy backhoe tractor outfitted with a high-impact hydraulic breaker / jackhammer attachment. Built for breaking reinforced concrete slabs, rock excavation, pavement demolition, and utility trenching.",
+    specs: "High Impact Energy Hydraulic Breaker | Multi-Angle Positioning",
+    highlights: [
+      "Reinforced Concrete Slab & Pavement Demolition",
+      "High-Frequency Impact Breaking Energy",
+      "Integrated Backhoe Loader Versatility",
+      "Fast Site Demolition & Trench Excavation",
     ],
   },
   {
@@ -401,35 +413,35 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "plate-compactor",
+    id: "angle-grinder",
     num: "22",
-    name: "Plate Compactor",
-    category: "Compaction",
-    img: imgPlateCompactor,
-    summary: "Vibratory plate compactor for soil, sand, asphalt patch, and paver base compaction in confined spaces.",
-    description: "Heavy-duty walk-behind vibratory plate compactor. Designed for compacting granular soil, sand, asphalt patch repairs, trench bases, and interlocking paver installations in tight footprints.",
-    specs: "High Centrifugal Compaction Force | Heavy Steel Base Plate | Folding Handle",
+    name: "Angle Grinder & Tools",
+    category: "Power Tools",
+    img: imgAngleGrinder,
+    summary: "Heavy-duty electric angle grinder with cutting & grinding discs for metal fabrication and pipe cutting.",
+    description: "Professional industrial electric angle grinder equipped with heavy-duty side handle, guard, and premium cutting/grinding discs. Used for structural steel beveling, weld seam grinding, and pipe cutting.",
+    specs: "High RPM Industrial Electric Motor | Adjustable Guard & Side Handle",
     highlights: [
-      "Granular Soil, Sand & Asphalt Patch Compaction",
-      "Narrow Footprint for Pipe Trenches & Sidewalks",
-      "Vibration Damped Guide Handle",
-      "Reliable Four-Stroke Engine Unit",
+      "Structural Steel Beveling & Weld Seam Grinding",
+      "Heavy Metal & Pipe Section Cutting",
+      "Ergonomic Vibration Reduction Handle",
+      "Supplied with Full Disc Set & Safety Guards",
     ],
   },
   {
-    id: "jumping-jack-compactor",
+    id: "drill-machine",
     num: "23",
-    name: "Jumping Jack Compactor",
-    category: "Compaction",
-    img: imgJumpingJackCompactor,
-    summary: "Heavy-duty rammer / jumping jack compactor for trench backfill compaction and high-cohesive soil compaction.",
-    description: "High-impact jumping jack rammer compactor. Specifically built for deep trench backfill compaction, cohesive clay soil compaction, and narrow footing excavations requiring deep impact force.",
-    specs: "High Stroke Impact Force | Heavy Polyurethane Bellows | Protective Engine Frame",
+    name: "Drill Machine",
+    category: "Power Tools",
+    img: imgDrillMachine,
+    summary: "Professional rotary impact drill machine for concrete anchor drilling, steel fitting, and civil installation.",
+    description: "Heavy-duty industrial impact drill machine built for drilling anchor holes in reinforced concrete, masonry walls, and structural steel sections. Features variable speed trigger and auxiliary depth gauge handle.",
+    specs: "High Torque Impact Motor | Keyed/Keyless Chuck | Auxiliary Depth Handle",
     highlights: [
-      "Deep Trench Backfill Soil Compaction",
-      "Cohesive Clay & Silt High-Impact Ramming",
-      "Narrow Shoe Width for Tight Pipe Trenches",
-      "Heavy Guard Frame for Jobsite Durability",
+      "Concrete Anchor & Chemical Bolt Drilling",
+      "Steel Plate & Structural Section Drilling",
+      "Variable Speed & Forward/Reverse Control",
+      "Heavy-Duty Industrial Grade Construction",
     ],
   },
 ];
@@ -445,12 +457,30 @@ export function HeavyEquipment() {
   const filteredEquipment = useMemo(() => {
     return heavyEquipmentList.filter((e) => {
       let matchesTab = true;
-      if (activeTab === "power") {
+      if (activeTab === "lifting") {
+        matchesTab =
+          e.category.toLowerCase().includes("lifting") ||
+          e.category.toLowerCase().includes("handling") ||
+          e.category.toLowerCase().includes("aerial");
+      } else if (activeTab === "earthmoving") {
+        matchesTab = e.category.toLowerCase().includes("earthmoving");
+      } else if (activeTab === "hauling") {
+        matchesTab =
+          e.category.toLowerCase().includes("hauling") ||
+          e.category.toLowerCase().includes("services") ||
+          e.category.toLowerCase().includes("concrete") ||
+          e.category.toLowerCase().includes("transport");
+      } else if (activeTab === "power") {
         matchesTab = e.category === "Power Generation";
+      } else if (activeTab === "compaction") {
+        matchesTab =
+          e.category.toLowerCase().includes("compaction") ||
+          e.category.toLowerCase().includes("paving");
       } else if (activeTab === "tools") {
-        matchesTab = e.category === "Power Tools" || e.category.toLowerCase().includes("demolition");
-      } else if (activeTab !== "all") {
-        matchesTab = e.category.toLowerCase().includes(activeTab.toLowerCase());
+        matchesTab =
+          e.category === "Power Tools" ||
+          e.category.toLowerCase().includes("demolition") ||
+          e.category.toLowerCase().includes("breaking");
       }
 
       const matchesSearch =
@@ -486,7 +516,7 @@ export function HeavyEquipment() {
         <SectionHeading
           eyebrow="Fleet & Equipment"
           title="Heavy Equipment Rental & Availability"
-          intro="ARZAQ EXPRESS Est. maintains a comprehensive fleet of 23 heavy equipment, diesel generators, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
+          intro="ARZAQ EXPRESS Est. maintains a comprehensive fleet of heavy equipment, diesel generators, earthmoving machinery, lifting cranes, compaction rollers, and power tools for immediate project deployment across KSA."
           invert
         />
 
@@ -505,17 +535,17 @@ export function HeavyEquipment() {
                 <TabsTrigger value="all" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
                   All ({heavyEquipmentList.length})
                 </TabsTrigger>
-                <TabsTrigger value="power" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
-                  Power Generators
+                <TabsTrigger value="lifting" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
+                  Lifting & Cranes
                 </TabsTrigger>
                 <TabsTrigger value="earthmoving" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
                   Earthmoving
                 </TabsTrigger>
-                <TabsTrigger value="lifting" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
-                  Lifting & Cranes
-                </TabsTrigger>
                 <TabsTrigger value="hauling" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
                   Transport & Hauling
+                </TabsTrigger>
+                <TabsTrigger value="power" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
+                  Power Generators
                 </TabsTrigger>
                 <TabsTrigger value="compaction" className="text-xs font-bold px-3 py-2 rounded-lg shrink-0 data-[state=active]:bg-amber-600 data-[state=active]:text-white">
                   Compaction & Paving
