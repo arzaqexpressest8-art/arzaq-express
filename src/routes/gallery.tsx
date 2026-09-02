@@ -59,7 +59,7 @@ function GalleryPage() {
             </Badge>
             <h1 className="font-display text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
               <span className="text-[#F36F21]">ARZAQ</span>{" "}
-              <span className="text-black">EXPRESS</span> Gallery
+              <span className="text-black">EXPRESS Est.</span> Gallery
             </h1>
           </div>
         </section>
