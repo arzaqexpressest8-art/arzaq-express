@@ -63,9 +63,11 @@ import imgJumpingJackCompactor from "@/assets/equipment/jumping-jack-compactor.j
 import imgGen100Kva from "@/assets/equipment/generator-100kva.png";
 import imgGen400Kva from "@/assets/equipment/generator-400kva.png";
 import imgGen500Kva from "@/assets/equipment/generator-500kva.png";
+import imgBobcatLoader from "@/assets/equipment/bobcat-loader.jpg";
+import imgAirCompressor from "@/assets/equipment/air-compressor.jpg";
 
 export const heavyEquipmentList = [
-  // Group 1: Lifting & Cranes
+  // Group 1: Lifting & Cranes (6 items)
   {
     id: "crane",
     num: "01",
@@ -163,7 +165,7 @@ export const heavyEquipmentList = [
     ],
   },
 
-  // Group 2: Earthmoving
+  // Group 2: Earthmoving (5 items)
   {
     id: "excavator-with-jackhammer",
     num: "07",
@@ -181,8 +183,24 @@ export const heavyEquipmentList = [
     ],
   },
   {
-    id: "wheel-loader",
+    id: "heavy-crawler-excavator",
     num: "08",
+    name: "Heavy Crawler Excavator",
+    category: "Earthmoving",
+    img: imgExcavator,
+    summary: "Heavy hydraulic crawler excavator for deep civil excavation, trenching, bulk earthworks, and site leveling.",
+    description: "High-performance hydraulic crawler excavator engineered for heavy earthmoving, deep trench excavation, foundation digging, and quarry operations. Features heavy-duty digging bucket, high breakout force, and certified operator.",
+    specs: "Heavy Duty Crawler Tracks | High Capacity Digging Bucket | High Breakout Force",
+    highlights: [
+      "Deep Civil Foundation & Pipeline Trenching",
+      "High Output Breakout Force for Heavy Digging",
+      "Supplied with Third-Party Certified Operator",
+      "Ideal for Site Clearing & Mass Earthworks",
+    ],
+  },
+  {
+    id: "wheel-loader",
+    num: "09",
     name: "Wheel Loader",
     category: "Earthmoving",
     img: imgWheelLoader,
@@ -198,7 +216,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jcb-backhoe",
-    num: "09",
+    num: "10",
     name: "JCB Super Backhoe Loader",
     category: "Earthmoving",
     img: imgJcbBackhoe,
@@ -212,11 +230,27 @@ export const heavyEquipmentList = [
       "Experienced Certified Operator Supplied",
     ],
   },
+  {
+    id: "skid-steer-bobcat",
+    num: "11",
+    name: "Skid Steer Loader (Bobcat)",
+    category: "Earthmoving",
+    img: imgBobcatLoader,
+    summary: "Versatile skid steer loader with auger drilling & bucket attachments for compact site earthworks and material handling.",
+    description: "Compact skid steer loader (Bobcat) outfitted with high-torque auger drilling attachment and front bucket. Ideal for foundation post-hole drilling, tight space site cleanup, grading, and utility excavation.",
+    specs: "High Torque Auger Attachment | Compact Footprint | Quick Attach Bucket System",
+    highlights: [
+      "Auger Drilling for Foundation Posts & Fencing",
+      "Compact Zero-Turn Footprint for Narrow Sites",
+      "High Utility Swappable Front Attachments",
+      "Fast Site Grading & Material Clearing",
+    ],
+  },
 
-  // Group 3: Transport & Hauling
+  // Group 3: Transport & Hauling (4 items)
   {
     id: "dump-truck",
-    num: "10",
+    num: "12",
     name: "Dump Truck",
     category: "Hauling & Earthmoving",
     img: imgDumpTruck,
@@ -232,7 +266,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "diesel-tanker-truck",
-    num: "11",
+    num: "13",
     name: "Diesel Tanker Truck",
     category: "Transport & Hauling",
     img: imgDieselTankerTruck,
@@ -247,8 +281,24 @@ export const heavyEquipmentList = [
     ],
   },
   {
+    id: "water-tanker-truck",
+    num: "14",
+    name: "Water Tanker Truck",
+    category: "Transport & Hauling",
+    img: imgWaterTanker,
+    summary: "Heavy water tanker truck for site dust suppression, compaction water supply, utility flushing, and washing.",
+    description: "High-capacity water tanker truck equipped with rear spray bars and water pump systems. Essential for site dust suppression, supplying water for soil compaction rollers, pipe hydrostatic testing, and site utility washing.",
+    specs: "High Capacity Water Tank | Rear Water Sprayer Bar | Auxiliary Water Pump",
+    highlights: [
+      "Construction Site Dust Suppression & Spraying",
+      "Water Supply for Compactor Rollers & Earthworks",
+      "Pipeline Hydrostatic Testing Water Supply",
+      "Reliable Tanker Fleet for Daily Site Service",
+    ],
+  },
+  {
     id: "concrete-mixer",
-    num: "12",
+    num: "15",
     name: "Concrete Mixer",
     category: "Concrete & Civil",
     img: imgConcreteMixer,
@@ -263,10 +313,10 @@ export const heavyEquipmentList = [
     ],
   },
 
-  // Group 4: Power Generators
+  // Group 4: Power Generators & Compression (4 items)
   {
     id: "generator-100kva",
-    num: "13",
+    num: "16",
     name: "100 kVA Caterpillar Diesel Generator",
     category: "Power Generation",
     img: imgGen100Kva,
@@ -282,11 +332,11 @@ export const heavyEquipmentList = [
   },
   {
     id: "generator-400kva",
-    num: "14",
+    num: "17",
     name: "400 kVA Caterpillar Diesel Generator",
     category: "Power Generation",
     img: imgGen400Kva,
-    summary: "Heavy high-capacity 400 kVA Caterpillar industrial diesel generator for major project sites, refineries, and plant power.",
+    summary: "High-capacity 400 kVA Caterpillar industrial diesel generator for major project sites, refineries, and plant power.",
     description: "High-capacity 400 kVA Caterpillar diesel generator unit providing reliable heavy-duty power for major industrial contracts, camp infrastructure, dewatering plants, and structural welding stations across KSA.",
     specs: "400 kVA Heavy Prime Power Rating | CAT Heavy Industrial Engine | High Fuel Efficiency",
     highlights: [
@@ -298,7 +348,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "generator-500kva",
-    num: "15",
+    num: "18",
     name: "500 kVA Caterpillar Diesel Generator",
     category: "Power Generation",
     img: imgGen500Kva,
@@ -312,11 +362,27 @@ export const heavyEquipmentList = [
       "Complete Distribution Box & Cable Accessories Option",
     ],
   },
+  {
+    id: "portable-air-compressor",
+    num: "19",
+    name: "Portable Diesel Air Compressor",
+    category: "Power Generation",
+    img: imgAirCompressor,
+    summary: "Heavy-duty portable diesel air compressor station for pneumatic jackhammers, sandblasting, and site pressure testing.",
+    description: "Heavy-duty towable diesel air compressor engineered for continuous high-pressure compressed air supply. Used for powering pneumatic breakers, sandblasting rigs, pipeline pressure testing, and industrial cleaning.",
+    specs: "High CFM Air Delivery | Heavy Duty Diesel Engine | Towable Trailer Chassis",
+    highlights: [
+      "High Pressure Compressed Air for Pneumatic Tools",
+      "Pipeline Hydrostatic & Pressure Testing Air Supply",
+      "Heavy Duty Weatherproof Acoustic Enclosure",
+      "Rapid Site Towing & Deployment Across KSA",
+    ],
+  },
 
-  // Group 5: Compaction & Paving
+  // Group 5: Compaction & Paving (4 items)
   {
     id: "asphalt-paver",
-    num: "16",
+    num: "20",
     name: "Asphalt Paver",
     category: "Paving & Roadwork",
     img: imgAsphaltPaver,
@@ -332,7 +398,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "road-roller",
-    num: "17",
+    num: "21",
     name: "Road Roller",
     category: "Compaction",
     img: imgRoadRoller,
@@ -348,7 +414,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "plate-compactor",
-    num: "18",
+    num: "22",
     name: "Plate Compactor",
     category: "Compaction",
     img: imgPlateCompactor,
@@ -364,7 +430,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jumping-jack-compactor",
-    num: "19",
+    num: "23",
     name: "Jumping Jack Compactor",
     category: "Compaction",
     img: imgJumpingJackCompactor,
@@ -379,10 +445,10 @@ export const heavyEquipmentList = [
     ],
   },
 
-  // Group 6: Demolition & Tools
+  // Group 6: Demolition & Tools (4 items)
   {
     id: "jackhammer-loader",
-    num: "20",
+    num: "24",
     name: "Jackhammer (Backhoe Attachment)",
     category: "Demolition & Breaking",
     img: imgJackhammerLoader,
@@ -398,7 +464,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "jack-hammer-pneumatic",
-    num: "21",
+    num: "25",
     name: "Jack Hammer (Demolition Breaker)",
     category: "Power Tools",
     img: imgJackHammerPneumatic,
@@ -414,7 +480,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "angle-grinder",
-    num: "22",
+    num: "26",
     name: "Angle Grinder & Tools",
     category: "Power Tools",
     img: imgAngleGrinder,
@@ -430,7 +496,7 @@ export const heavyEquipmentList = [
   },
   {
     id: "drill-machine",
-    num: "23",
+    num: "27",
     name: "Drill Machine",
     category: "Power Tools",
     img: imgDrillMachine,
