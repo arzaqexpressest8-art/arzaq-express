@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "How can I request a technical and commercial quotation or download the company profile?",
-    a: "You can click 'Company Profile' in the top header or hero section to view and download our official corporate brochure. Alternatively, fill out the inquiry form below or contact our sales team directly at sales@arzaqexpressksa.com or +966-590316144 / +966-536083965.",
+    a: "You can click 'Company Profile' in the top header or hero section to view and download our official corporate brochure. Alternatively, fill out the inquiry form below or contact our sales team directly at sales@arzaqexpressksa.com or +966-590316144.",
   },
 ];
 

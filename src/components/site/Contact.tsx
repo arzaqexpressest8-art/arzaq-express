@@ -30,7 +30,7 @@ const contactDetails = [
   {
     icon: Phone,
     label: "Phone & WhatsApp",
-    value: "+966-590316144 / +966-536083965",
+    value: "+966-590316144",
     href: "tel:+966590316144",
   },
   {
@@ -114,23 +114,7 @@ export function Contact() {
                       <div className="text-[0.65rem] font-bold uppercase tracking-wider text-slate-400">
                         {item.label}
                       </div>
-                      {item.label === "Phone & WhatsApp" ? (
-                        <div className="text-xs sm:text-sm font-semibold text-white mt-0.5 flex items-center gap-1.5 flex-wrap">
-                          <a
-                            href="tel:+966590316144"
-                            className="hover:text-amber-400 transition-colors"
-                          >
-                            +966-590316144
-                          </a>
-                          <span className="text-slate-400">/</span>
-                          <a
-                            href="tel:+966536083965"
-                            className="hover:text-amber-400 transition-colors"
-                          >
-                            +966-536083965
-                          </a>
-                        </div>
-                      ) : item.href ? (
+                      {item.href ? (
                         <a
                           href={item.href}
                           target={item.href.startsWith("http") ? "_blank" : undefined}
